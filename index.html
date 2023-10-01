@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript!</title>
+
+    <style>
+
+     body{
+        overflow: hidden;
+        background-image: url(bg.webp);
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+     }
+     
+     h1{
+        text-align: center;
+        font-size: 88px !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: burlywood;
+        background-color: #ffebcd52;
+     }
+     .app {
+        width: 100% ;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+     }
+
+     img {
+        width: 124px;   
+     }
+
+     button{
+        width: 320px;
+        height: 64px;
+        padding: 12px 48px 12px 48px;
+        font-size: 24px;
+     }
+     .btn{
+        margin-left: 28%;
+     }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <h1>The Bulb</h1>
+    <div class="app">
+        <img id="pic" src="pic_bulboff.gif" alt="bulb">
+    </div>
+    <div class="btn"> 
+        <button type="button" onclick="turnOn()">Turn On</button>
+        <button type="button" onclick="turnOff()">Turn Off</button>   
+    </div>
+
+    <script>
+
+        function turnOn(){
+            document.getElementById('pic').src = 'pic_bulbon.gif' ;
+        }
+
+        function turnOff(){
+            document.getElementById('pic').src = 'pic_bulboff.gif' ;
+        }
+
+    </script>
+
+</body>
+
+</html>
